@@ -1,8 +1,11 @@
+import logo from '/logo-name.svg'
+
 const Header = () => {
+    const now = new Date();
     return (
         <header>
-            <h3>IT-Incubator</h3>
-            <span>Time 42:56</span>
+            <img src={logo} alt="logo"/>
+            <span>Time {now.toLocaleTimeString()}</span>
         </header>
     )
 }
