@@ -1,5 +1,5 @@
 import React from 'react';
-import {technologies} from "./src/App.jsx"; // Не забудьте импортировать React
+import {technologies} from "../App.jsx"; // Не забудьте импортировать React
 
 export function WantToLearn() {
     return (

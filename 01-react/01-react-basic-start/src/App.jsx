@@ -1,5 +1,5 @@
 import Header from "./components/Header.jsx";
-import {WantToLearn} from "../wantToLearn.jsx";
+import {WantToLearn} from "./components/wantToLearn.jsx";
 
 export const technologies = [
     {name: 'Javascript', other: 'Язык программирования для веб-разработки'},
