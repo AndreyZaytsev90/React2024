@@ -1,13 +1,16 @@
 import logo from '/logo-name.svg'
-import {useEffect, useState} from "react";
+import {memo, useEffect, useState} from "react";
 
 const Header = () => {
     const [date, setDate] = useState(new Date())
-    const sec = new Date().getSeconds()
 
-    useEffect(()=> {
-        setInterval(()=> setDate(date), 1000)
-    }, [])
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setDate(new Date()); // Используем функциональное обновление
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, []); // Интервал создаётся только один раз
 
 
     return (
@@ -19,4 +22,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default memo(Header)

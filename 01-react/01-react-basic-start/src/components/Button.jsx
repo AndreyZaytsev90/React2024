@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {memo} from 'react';
 
 const Button = ({style, btnName, callBack}) => {
 
@@ -17,4 +17,4 @@ const Button = ({style, btnName, callBack}) => {
     );
 };
 
-export default Button;
+export default memo(Button);
