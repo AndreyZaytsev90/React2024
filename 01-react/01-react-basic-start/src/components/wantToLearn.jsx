@@ -12,7 +12,7 @@ export function WantToLearn({ways}) {
                 </li>
             ))}*/}
             {ways.map((item, index) => ( // Добавлен index как key
-                <li key={index}>
+                <li key={index} className="p-4 mb-4 border-1 border-sky-500 rounded-sm bg-red-100 ">
                     <p>
                         <strong>{item.title}.</strong> {item.description}
                     </p>

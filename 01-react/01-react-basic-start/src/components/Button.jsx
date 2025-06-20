@@ -1,8 +1,17 @@
 import React from 'react';
 
-const Button = ({style, btnName}) => {
+const Button = ({style, btnName, callBack}) => {
+
+    const onClickHandler = () => {
+        callBack()
+    }
+
+    function onDoubleClickHandler() {
+        console.log('DoubleClick!')
+    }
+
     return (
-        <button className={style}>
+        <button className={style} onClick={callBack} onDoubleClick={onDoubleClickHandler}>
             {btnName}
         </button>
     );
