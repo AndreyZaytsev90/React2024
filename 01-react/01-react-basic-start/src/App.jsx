@@ -2,7 +2,7 @@ import Header from "./components/Header.jsx";
 import {WantToLearn} from "./components/wantToLearn.jsx";
 import {ways, differences} from "./data.js";
 import Button from "./components/Button.jsx";
-import {useState} from "react";
+import {memo, useState} from "react";
 
 export const technologies = [
     {name: 'Javascript', other: 'Язык программирования для веб-разработки'},
@@ -10,22 +10,22 @@ export const technologies = [
 ]
 
 
-export default function App() {
+export const App = memo(() => {
 
     const [content, setContent] = useState('');
 
-   /* function AppClickHandler() {
-        switch (differences) {
-            case 'way':
-                return setContent(differences.way)
-            case 'easy':
-                return setContent(differences.easy)
-            case 'program':
-                return setContent(differences.program)
-            default:
-                return setContent("Пусто")
-        }
-    }*/
+    /* function AppClickHandler() {
+         switch (differences) {
+             case 'way':
+                 return setContent(differences.way)
+             case 'easy':
+                 return setContent(differences.easy)
+             case 'program':
+                 return setContent(differences.program)
+             default:
+                 return setContent("Пусто")
+         }
+     }*/
 
     return (
         <div>
@@ -51,5 +51,5 @@ export default function App() {
             </main>
         </div>
     )
-}
+})
 

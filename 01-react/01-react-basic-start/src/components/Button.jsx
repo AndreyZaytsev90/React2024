@@ -1,6 +1,6 @@
 import React, {memo} from 'react';
 
-const Button = ({style, btnName, callBack}) => {
+const Button = memo(({style, btnName, callBack}) => {
 
     const onClickHandler = () => {
         callBack()
@@ -15,6 +15,6 @@ const Button = ({style, btnName, callBack}) => {
             {btnName}
         </button>
     );
-};
+})
 
-export default memo(Button);
+export default Button
