@@ -4,13 +4,11 @@ import { memo, useEffect, useState } from "react";
 const Header = memo(() => {  // memo уже применяется, но можно явно указать
     const [date, setDate] = useState(new Date());
 
-    useEffect(() => {
-        const interval = setInterval(() => {
+    setInterval(() => {
             setDate(new Date());
         }, 1000);
 
-        return () => clearInterval(interval);
-    }, []);
+    
 
     return (
         <header>

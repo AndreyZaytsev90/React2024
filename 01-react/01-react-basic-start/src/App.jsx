@@ -47,7 +47,11 @@ export const App = memo(() => {
                             btnName={"Концентрация"}
                             callBack={() => setContent(differences.program)}/>
                 </section>
-                <p className="mt-4">{content}</p>
+                {content ? (
+                    <p className="mt-4">{content}</p>
+                ): (
+                    <p className="mt-4">Нажми кнопку</p>
+                )}
             </main>
         </div>
     )
