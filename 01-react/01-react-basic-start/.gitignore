@@ -1,0 +1,43 @@
+# dependencies
+/node_modules
+
+# production
+/dist
+
+# Vite cache
+/.vite
+
+# testing
+/coverage
+
+# environment variables
+.env
+.env.local
+.env.*.local
+
+# misc
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# editor folders and system files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# eslint / prettier / cache
+.eslintcache
+.prettiercache
+
+# TypeScript
+*.tsbuildinfo
