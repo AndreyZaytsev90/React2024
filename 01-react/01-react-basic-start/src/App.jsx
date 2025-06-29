@@ -1,7 +1,7 @@
 import Header from "./components/Header.jsx";
 import {memo, useState} from "react";
 import {TeachingSection} from "./components/TeachingSection.jsx";
-import {Differences} from "./components/Differences.jsx";
+import {DifferencesSection} from "./components/DifferencesSection.jsx";
 
 export const technologies = [
     {name: 'Javascript', other: 'Язык программирования для веб-разработки'},
@@ -17,7 +17,7 @@ export const App = memo(() => {
             <Header/>
             <main>
                 <TeachingSection/>
-                <Differences/>
+                <DifferencesSection/>
             </main>
         </>
     )
